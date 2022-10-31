@@ -7,7 +7,7 @@ int main()
     srand(time(nullptr));
 
     unsigned int dice{}, count_rolls{};
-    unsigned int sides_cube{6};
+    const int sides_cube{6};
     unsigned int array_dices[6]{};
 
     std::cout << "Enter count of rolls:" << std::endl;
