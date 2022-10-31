@@ -8,7 +8,7 @@ int main()
 
     unsigned int dice{}, count_rolls{};
     const int sides_cube{6};
-    unsigned int array_dices[6]{};
+    unsigned int array_dices[sides_cube]{};
 
     std::cout << "Enter count of rolls:" << std::endl;
     std::cin >> count_rolls;
