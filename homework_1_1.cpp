@@ -7,7 +7,8 @@ int main()
     srand(time(nullptr));
 
     unsigned int dice{}, count_rolls{};
-    unsigned int array_dices[6]{0,0,0,0,0,0};
+    unsigned int sides_cube{6};
+    unsigned int array_dices[6]{};
 
     std::cout << "Enter count of rolls:" << std::endl;
     std::cin >> count_rolls;
@@ -15,14 +16,14 @@ int main()
     {
         for (int i{}; i < count_rolls; i++)
         {
-            dice = rand() % 6 + 1;
+            dice = rand() % sides_cube + 1;
             array_dices[dice - 1]++;
         }
 
-        unsigned int max_value_dices = 0;
-        unsigned int min_value_dices = count_rolls;
+        unsigned int max_value_dices{0};
+        unsigned int min_value_dices{count_rolls};
 
-        for (int i{}; i < 6; i++)
+        for (int i{}; i < sides_cube; i++)
         {
             if (array_dices[i] > max_value_dices)
                 max_value_dices = array_dices[i];
@@ -39,3 +40,4 @@ int main()
     }
 
 }
+
