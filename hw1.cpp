@@ -8,7 +8,7 @@ using namespace std;
 
 int mostFrequent(int* arr, int n)
 {
-    // code here
+    
     int maxcount = 0;
     int element_having_max_freq;
     for (int i = 0; i < n; i++) {
@@ -29,10 +29,10 @@ int mostFrequent(int* arr, int n)
 
 int leastFrequent(int arr[], int n)
 {
-    // Sort the array
+    
     sort(arr, arr + n);
  
-    // find the min frequency using linear traversal
+    
     int min_count = n+1, res = -1, curr_count = 1;
     for (int i = 1; i < n; i++) {
         if (arr[i] == arr[i - 1])
@@ -46,7 +46,7 @@ int leastFrequent(int arr[], int n)
         }
     }
   
-    // If last element is least frequent
+    
     if (curr_count < min_count)
     {
         min_count = curr_count;
@@ -64,135 +64,135 @@ int throwtimes;
 int i;
 int most;
 int least;
-int count1=0, count2=0, count3=0, count4=0, count5=0, count6=0;
+int count[6]{0,0,0,0,0,0};
 
-cout << "Введіть кількість кидків кубика: ";
+cout << "Input throw times of cube : ";
 cin >> throwtimes;
 int arr[throwtimes];
 for( i=0; i<throwtimes; i++){
   number = 1 + (rand() % 6); 
-  //cout << "number = " << number << endl;
+  
    arr[i] = number;
 cout << "Number: " << number << "    Throwtimes: " << i << endl;
     if (arr[i]==1)
-        count1++;
+        count[0]++;
 
     if (arr[i]==2)
-        count2++;
+        count[1]++;
 
     if (arr[i]==3)
-        count3++;    
+        count[2]++; 
     
     if (arr[i]==4)
-        count4++; 
+        count[3]++; 
 
     if (arr[i]==5)
-        count5++; 
+        count[4]++;
 
     if (arr[i]==6)
-        count6++;         
+        count[5]++;         
 }
 
 
 
-cout <<"Кількість сторін 1: " << count1 << endl;
-cout <<"Кількість сторін 2: " << count2 << endl;
-cout <<"Кількість сторін 3: " << count3 << endl;
-cout <<"Кількість сторін 4: " << count4 << endl;
-cout <<"Кількість сторін 5: " << count5 << endl;
-cout <<"Кількість сторін 6: " << count6 << endl;
-cout <<"Більше всього: " <<  mostFrequent(arr, throwtimes) << endl;
-cout <<"Менше всього: " << leastFrequent(arr, throwtimes)<< endl;
+cout <<"Number of side  1: " << count[0] << endl;
+cout <<"Number of side  2: " << count[1] << endl;
+cout <<"Number of side  3: " << count[2] << endl;
+cout <<"Number of side  4: " << count[3] << endl;
+cout <<"Number of side  5: " << count[4] << endl;
+cout <<"Number of side  6: " << count[5] << endl;
+cout <<"The most: " <<  mostFrequent(arr, throwtimes) << endl;
+cout <<"The least: " << leastFrequent(arr, throwtimes)<< endl;
 
 
 
 int month;
-cout << "Введіть номер місяця: ";
+cout << "Enter the month number: ";
 cin >> month;
 switch (month)
 {
 case 1:
 
-    cout << "Січень" << endl;
-    cout << "31 день"<< endl;
+    cout << "January" << endl;
+    cout << "31 day"<< endl;
     break;
 
 
 case 2:
 
-    cout << "Лютий" << endl;
-    cout << "28/29 днів"<< endl;
+    cout << "February" << endl;
+    cout << "28/29 days"<< endl;
     break;
 
 
 case 3:
 
-    cout << "Березень" << endl;
-    cout << "31 день"<< endl;
+    cout << "March" << endl;
+    cout << "31 day"<< endl;
     break;
 
 
 case 4:
 
-    cout << "Квітень" << endl;
-    cout << "30 днів"<< endl;
+    cout << "April" << endl;
+    cout << "30 day"<< endl;
     break;
 
 
 case 5:
 
-    cout << "Травень" << endl;
-    cout << "31 день"<< endl;
+    cout << "May" << endl;
+    cout << "31 day"<< endl;
     break;
 
 
 case 6:
 
-    cout << "Червень" << endl;
-    cout << "30 днів"<< endl;
+    cout << "June" << endl;
+    cout << "30 day"<< endl;
     break;
 
 
 case 7:
 
-    cout << "Липень" << endl;
-    cout << "31 день"<< endl;
+    cout << "July" << endl;
+    cout << "31 day"<< endl;
     break;
 
 
 case 8:
 
-    cout << "Серпень" << endl;
-    cout << "31 день"<< endl;
+    cout << "August" << endl;
+    cout << "31 day"<< endl;
     break;
 
 
 case 9:
 
-    cout << "Вересень" << endl;
-    cout << "30 днів" << endl;
+    cout << "September" << endl;
+    cout << "30 days" << endl;
     break;
 
 
 
 case 10:
 
-    cout << "Жовтень" << endl;
-    cout << "31 день" << endl;
+    cout << "October" << endl;
+    cout << "31 day" << endl;
     break;
 
 
 case 11:
 
-    cout << "Листопад" << endl;
-    cout << "30 днів" << endl;
+    cout << "November" << endl;
+    cout << "30 days" << endl;
     break;
 
 
 case 12:
 
-    cout << "Грудень" << endl;
-    cout << "31 день" << endl;
+    cout << "December" << endl;
+    cout << "31 days" << endl;
     break;
 
 
