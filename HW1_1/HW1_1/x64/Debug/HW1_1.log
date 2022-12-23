@@ -1,3 +1,3 @@
 ﻿  First_task.cpp
-C:\Users\Daria\Desktop\ITEA_C++\ITEAHomeWork1_0922\HW1_1\HW1_1\First_task.cpp(6,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Daria\Desktop\ITEA_C++\ITEAHomeWork1_0922\HW1_1\HW1_1\First_task.cpp(8,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   HW1_1.vcxproj -> C:\Users\Daria\Desktop\ITEA_C++\ITEAHomeWork1_0922\HW1_1\x64\Debug\HW1_1.exe
